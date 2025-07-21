@@ -32,7 +32,7 @@ test.describe('Health Insurance', () => {
     });
 
     test("Select Relatives", async () => {
-        // Select the relatives
+        // Select the relations preferred
         await health.selectRelatives(inputdata.Relation2);
         await health.selectRelatives(inputdata.Relation1);
     });
@@ -43,7 +43,7 @@ test.describe('Health Insurance', () => {
     });
 
     test("Select Age", async () => {
-        // Select the age for user and relatives
+        // Select the age for user and relations mentioned 
         await health.ageSelection(inputdata.User, inputdata.UserAge);
         await health.ageSelection(inputdata.Relation2, inputdata.Relation2Age);
         await health.ageSelection(inputdata.Relation1, inputdata.Relation1Age);
@@ -63,7 +63,7 @@ test.describe('Health Insurance', () => {
     });
 
     test("Wait for Page to Load", async () => {
-        // Wait for the selector
+        // Wait for the selector that it is visible 
         await page.waitForSelector(".space_p_lr_24");
     });
 
