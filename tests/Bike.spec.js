@@ -21,9 +21,6 @@ test.describe('Bike Insurance', () => {
     test("Go to the website", async () => {
         // Go to the https://www.coverfox.com/
         await homePage.gotoWebsite();
-    });
-
-    test("Select Bike Category", async () => {
         // Select the Bike category
         await homePage.selectCategory(inputdata.Bike);
     });
@@ -36,14 +33,8 @@ test.describe('Bike Insurance', () => {
     test("Select Expire Status", async () => {
         // Select the second option
         await bike.selectExpireStatus();
-    });
-
-    test("Click View Quotes", async () => {
         // Click the View Quotes button
         await homePage.clickViewQuotes("first");
-    });
-
-    test("Wait for Insurer Not Offered", async () => {
         // Wait for the insurer not offered selector
         await page.waitForSelector(".insurer-not-offered");
     });
