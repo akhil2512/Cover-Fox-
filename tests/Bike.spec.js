@@ -3,7 +3,7 @@ import { test, expect } from '@playwright/test';
 const fs = require('fs');
 
 const { HomePage } = require('../pages/HomePage');
-const { Bike } = require('../Pages/Bike');
+const { Bike } = require('../pages/Bike');
 
 const inputdata = JSON.parse(JSON.stringify(require("../input.json")));
 
