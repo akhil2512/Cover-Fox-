@@ -3,7 +3,7 @@ const fs = require('fs');
 const { HomePage } = require('../pages/HomePage');
 const { Health } = require('../pages/Health');
 
-const inputdata = JSON.parse(JSON.stringify(require("../input.json")));
+const inputdata = require('../input.json')
 
 test.describe('Health Insurance', () => {
     let page;

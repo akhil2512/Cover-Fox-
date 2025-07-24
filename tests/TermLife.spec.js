@@ -3,7 +3,7 @@ const fs = require('fs');
 const { HomePage } = require('../pages/HomePage');
 const { TermLife } = require('../pages/TermLife');
 
-const inputdata = JSON.parse(JSON.stringify(require("../input.json")));
+const inputdata = require('../input.json')
 
 test.describe('Term Life Insurance', () => {
     let page;
