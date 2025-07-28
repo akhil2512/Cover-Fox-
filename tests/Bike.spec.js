@@ -5,7 +5,7 @@ const fs = require('fs');
 const { HomePage } = require('../pages/HomePage');
 const { Bike } = require('../pages/Bike');
 
-const inputdata = require('../input.json')
+const inputdata = require('../utils/input.json')
 
 test.describe('Bike Insurance', () => {
     let page;

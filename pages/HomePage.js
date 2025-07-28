@@ -1,40 +1,72 @@
 export class HomePage {
     constructor(page) {
         this.page = page;
+ 
+        // Locators
+        this.categoryLocator = this.page.locator(".widget-nav.will-fade.fade-appear li");
+        this.viewQuotesLocator = this.page.getByTitle("View Quotes");
+        this.radioOptionLocator = this.page.locator(".w--radio__option");
+        this.phoneInputLocator = this.page.locator("input[type='tel']");
+        this.vehicleInputLocator = this.page.locator("input[type='text']");
     }
-
+ 
     async gotoWebsite() {
-        await this.page.goto("https://www.coverfox.com/");
+        try {
+            await this.page.goto("https://www.coverfox.com/");
+        } 
+        catch (error) {
+            console.error("Error navigating to website:", error);
+        }
     }
-
+ 
     async selectCategory(type) {
-        await this.page.locator(`.widget-nav.will-fade.fade-appear li`).filter({ hasText: type }).click();
-    }
-
-    async clickViewQuotes(order){
-        const button = "View Quotes"
-        if(order === 'first'){
-        await this.page.getByTitle(button).click();
-        }
-        else{
-            await this.page.getByTitle(button).last().click();
-
+        try {
+            await this.categoryLocator.filter({ hasText: type }).click();
+        } 
+        catch (error) {
+            console.error(`Error selecting category "${type}":`, error);
         }
     }
-    async selectOption1(text){
-        const option_locator = ".w--radio__option"
-        await this.page.locator(option_locator).filter({ hasText: text}).first().waitFor();
-        await this.page.locator(option_locator).filter({ hasText: text }).first().click();
-
+ 
+    async clickViewQuotes(order) {
+        try {
+            if (order === 'first') {
+                await this.viewQuotesLocator.click();
+            } else {
+                await this.viewQuotesLocator.last().click();
+            }
+        } 
+        catch (error) {
+            console.error(`Error clicking 'View Quotes' button (${order}):`, error);
+        }
     }
-
-    async fillNumber(num){
-        await this.page.locator("input[type='tel']").fill(num);
-
+ 
+    async selectOption1(text) {
+        try {
+            const option = this.radioOptionLocator.filter({ hasText: text }).first();
+            await option.waitFor();
+            await option.click();
+        } 
+        catch (error) {
+            console.error(`Error selecting radio option "${text}":`, error);
+        }
     }
-    async fillVehicleNumber(number){
-        await this.page.locator("input[type='text']").fill(number);
-
+ 
+    async fillNumber(num) {
+        try {
+            await this.phoneInputLocator.fill(num);
+        } 
+        catch (error) {
+            console.error("Error filling phone number:", error);
+        }
     }
-
+ 
+    async fillVehicleNumber(number) {
+        try {
+            await this.vehicleInputLocator.fill(number);
+        } 
+        catch (error) {
+            console.error("Error filling vehicle number:", error);
+        }
+    }
 }
