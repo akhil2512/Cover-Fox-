@@ -1,5 +1,10 @@
 [
   {
+    "Provider Name": " Star Health Insurance Young Star (SILVER) ",
+    "Premium": "5 Lakh",
+    "Sum Assured": "5,375"
+  },
+  {
     "Provider Name": " ReAssure 2.0 Bronze+ ",
     "Premium": "5 Lakh",
     "Sum Assured": "6,801"
@@ -8,11 +13,6 @@
     "Provider Name": " Aditya Birla Activ Health Platinum Enhanced ",
     "Premium": "4 Lakh",
     "Sum Assured": "5,940"
-  },
-  {
-    "Provider Name": " Star Health Insurance Young Star (SILVER) ",
-    "Premium": "5 Lakh",
-    "Sum Assured": "5,375"
   },
   {
     "Provider Name": " Liberty General Health Connect - Supreme ",
@@ -95,6 +95,11 @@
     "Sum Assured": "4,610"
   },
   {
+    "Provider Name": " Liberty General Health Connect - Basic ",
+    "Premium": "4 Lakh",
+    "Sum Assured": "3,973"
+  },
+  {
     "Provider Name": " Liberty General Health Connect - Supreme ",
     "Premium": "5 Lakh",
     "Sum Assured": "6,091"
@@ -111,23 +116,8 @@
   },
   {
     "Provider Name": " Liberty General Health Connect - Basic ",
-    "Premium": "4 Lakh",
-    "Sum Assured": "3,973"
-  },
-  {
-    "Provider Name": " Care Plus Youth ",
-    "Premium": "5 Lakh",
-    "Sum Assured": "9,036"
-  },
-  {
-    "Provider Name": " Liberty General Health Connect - Basic ",
     "Premium": "5 Lakh",
     "Sum Assured": "4,993"
-  },
-  {
-    "Provider Name": " Care Health Insurance Care Heart ",
-    "Premium": "5 Lakh",
-    "Sum Assured": "8,996"
   },
   {
     "Provider Name": " Royal Sundaram Lifeline Plan ",
@@ -143,6 +133,16 @@
     "Provider Name": " Aditya Birla Activ Assure: Diamond with Super NCB ",
     "Premium": "5 Lakh",
     "Sum Assured": "5,717"
+  },
+  {
+    "Provider Name": " Care Plus Youth ",
+    "Premium": "5 Lakh",
+    "Sum Assured": "9,036"
+  },
+  {
+    "Provider Name": " Care Health Insurance Care Heart ",
+    "Premium": "5 Lakh",
+    "Sum Assured": "8,996"
   },
   {
     "Provider Name": " Liberty General Health Connect (E-Connect) ",
@@ -195,6 +195,11 @@
     "Sum Assured": "7,075"
   },
   {
+    "Provider Name": " Star Health Insurance Medi Classic Plan ",
+    "Premium": "4 Lakh",
+    "Sum Assured": "6,431"
+  },
+  {
     "Provider Name": " ReAssure 2.0 Bronze ",
     "Premium": "5 Lakh",
     "Sum Assured": "6,301"
@@ -205,24 +210,19 @@
     "Sum Assured": "6,503"
   },
   {
-    "Provider Name": " Star Health Insurance Medi Classic Plan ",
-    "Premium": "4 Lakh",
-    "Sum Assured": "6,431"
-  },
-  {
     "Provider Name": " National Insurance Arogya Sanjeevani Plan ",
     "Premium": "4.5 Lakh",
     "Sum Assured": "6,837"
   },
   {
-    "Provider Name": " Star Health Star Diabetes (Plan A) ",
-    "Premium": "4 Lakh",
-    "Sum Assured": "10,071"
-  },
-  {
     "Provider Name": " National Insurance Arogya Sanjeevani Plan ",
     "Premium": "5 Lakh",
     "Sum Assured": "7,147"
+  },
+  {
+    "Provider Name": " Star Health Star Diabetes (Plan A) ",
+    "Premium": "4 Lakh",
+    "Sum Assured": "10,071"
   },
   {
     "Provider Name": " Star Health Star Diabetes (Plan A) ",
