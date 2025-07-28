@@ -52,9 +52,10 @@ test.describe('Health Insurance', () => {
         await health.pinCode("second", inputdata.Pincode);
         await health.pinCode("third", inputdata.PhoneNumber);
         await health.nextButton();
+        // Wait for the selector
+        await page.waitForSelector(".space_p_lr_24");
     });
- 
- 
+  
     test("Store Health Insurance", async () => {
         // Store the health insurance details
         await health.storeHealthInsurance();
